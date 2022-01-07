@@ -1,0 +1,20 @@
+:root {
+    
+
+/* Color styles */
+--header-article: rgba(74, 35, 90, 1);
+--couleur-menu-burger: rgba(108, 52, 131, 1);
+--texte-noir: rgba(0, 0, 0, 1);
+--texte-blanc: rgba(255, 255, 255, 1);
+
+/* Polices */
+--police--soustitre: 'brandon grotesque';
+--police--titre: 'poetsen-one';
+--texte--article: 'brandon grotesque', light ;
+
+}
+
+@font-face {
+    font-family: 'poetsen-one';
+    src: url('../../fonts/PoetsenOne-Regular.ttf');
+ }
