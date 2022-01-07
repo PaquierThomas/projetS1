@@ -1,11 +1,16 @@
 .footer__menu div,
-.footer__excerpt {
+.footer__excerpt,
+.footer__social,
+.footer__endDesc {
     font-family: var(--police--titre) ;
 }
-
+.footer {
+    background: var(--header-article)
+}
 .footer__logo {
     display: block;
     text-align: center;
+    padding-top: 46px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -18,10 +23,45 @@
 .footer__title {
     text-align: center;
     font-size: 30px;
+    margin-top: 83px;
+    margin-bottom: 59px;
 }
 
 .footer__menu ul>li {
     text-align: center;
-    margin: 10px 0px;
+    color: white;
+    margin-bottom: 39px;
     font-size: 14px;
+}
+
+
+/* Footer nous suivre */
+
+.footer__social ul>li{
+    position: relative;
+    display:inline-block;
+    text-align: center;
+    margin: 0px 18px;
+    left: 45px;
+}
+
+
+/* Fin footer */
+
+.footer__gb{
+    display: block;
+    text-align: center;
+    margin-top: 57px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+}
+
+.footer__endDesc{
+    font-size: 15px;
+    text-align: center;
+    margin-top: 15px;
+    padding-bottom: 20px;
+    margin-bottom: -15px;
+
 }
