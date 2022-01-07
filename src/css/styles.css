@@ -35,3 +35,7 @@ Soyez attentifs à l'ordre d'import :
 @import "components/carousel.css";
 
 
+/* Js */
+@import "../js/fonction.js"; 
+
+

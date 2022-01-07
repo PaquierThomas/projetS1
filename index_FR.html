@@ -1,6 +1,6 @@
 <!-- branche test avant merge sur branche principale-->
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="fr" x-data="{ menuIsOpen: false }" :class="menuIsOpen && 'noscroll'">
   <head>
       
     <meta charset="utf-8">
@@ -10,8 +10,16 @@
 
     <title>W.E. Fight</title>
 
+    <!-- Déclaration de la feuille de style -->
+    <link rel="stylesheet" href="src/css/styles.css">
     <!-- Chargement de la librairie Alpine JS -->
     <script defer="" src="https://unpkg.com/alpinejs@3.4.2/dist/cdn.min.js"></script>
+    <!-- Déclaration de la feuille de javascript-->
+    <script src="src/js/fonction.js"></script>
+    <!-- Chargement de la librairie Amine js-->
+    <script src="https://animejs.com/lib/anime.min.js"></script>
+
+
 
   </head>
 
@@ -22,7 +30,7 @@
     <!-- Start du header (logo)-->
     <div class="header__start">
       <a href="/">
-        <img class="header__logo" src="public/icon/Logo du site.svg" alt="logo du site W.E. Fight">
+        <img class="header__logo" src="public/icon/logo-site.svg" alt="logo du site W.E. Fight">
       </a>
     </div>
 
