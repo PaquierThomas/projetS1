@@ -1,3 +1,12 @@
+/* Enlever la mise en forme des liens hypertextes + couleur du footer  */
+.footer__menu a:link,
+.footer__menu a:visited  {
+    text-decoration: none;
+    color: white;
+    font-family: var(--police--titre)
+}
+
+
 .footer__menu div,
 .footer__excerpt,
 .footer__social,
@@ -18,6 +27,7 @@
     text-align: center;
     font-size: 19px;
     margin: 14px 40px;
+    color:white;
 }
 
 .footer__title {
@@ -25,6 +35,7 @@
     font-size: 30px;
     margin-top: 83px;
     margin-bottom: 59px;
+    color:white;
 }
 
 .footer__menu ul>li {
@@ -63,5 +74,6 @@
     margin-top: 15px;
     padding-bottom: 20px;
     margin-bottom: -15px;
+    color:white;
 
 }

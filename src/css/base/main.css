@@ -15,9 +15,9 @@ button {
     margin: 0;
   }
 
-/* Enlever la mise en forme des liens hypertextes */
-.footer__menu a:link,
-.footer__menu a:visited  {
-    text-decoration: none;
-    color: white;
+/* Enlever la mise en forme des liens hypertextes du menu burger + couleur */
+.header__menu a:link,
+.header__menu a:visited {
+  text-decoration: none;
+  color: var(--couleur-menu-burger);
 }

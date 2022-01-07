@@ -25,7 +25,9 @@
 
 
   <!-- En-tête de la page -->
-  <header class="header container">
+  <header class="header container" 
+      @scroll.window="atTop = ( window.scrollY > 100 ? false : true )"
+      :class="{ 'header--atTop' : !atTop }" >
     
     <!-- Start du header (logo)-->
     <div class="header__start">
@@ -36,10 +38,12 @@
 
     <!-- Dernière partie (partie de droit) du header (menu burguer)-->
     <div class="header__end">
-      <button class="header__search">
-        <img src="public/icon/MenuBurgerViolet.svg" alt="menu burger / menu de navigation">
+      <button class="header__menu-btn menu-btn" aria-label="menu" aria-expanded="false" aria-controls="mainNav"
+                @pointerdown="menuIsOpen = !menuIsOpen" 
+                :class="menuIsOpen && 'menu-btn--open'">
+          <span class="menu-btn__bar"></span>
       </button>
-
+      
 
 
       <!-- Menu principal -->
@@ -47,10 +51,15 @@
       <nav class="header__menu menu" id="mainNav" :class="menuIsOpen && 'menu--open'">
         <ul class="menu__list list-unstyled">
           <li class="menu__item"><a class="menu__link" href="Amarguerite_FR.html">Marguerite Durand </a></li>
+          <li class="menu_item"> <img src="public/icon/horbarre.svg" alt="barre horizontale"></li>
           <li class="menu__item"><a class="menu__link" href="Asuffragettes_FR.html">Les Suffragettes</a></li>
+          <li class="menu_item"> <img src="public/icon/horbarre.svg" alt="barre horizontale"></li>
           <li class="menu__item"><a class="menu__link" href="Aoprah_FR.html">Oprah Winfrey</a></li>
+          <li class="menu_item"> <img src="public/icon/horbarre.svg" alt="barre horizontale"></li>
           <li class="menu__item"><a class="menu__link" href="galerie_feministe_FR.html">Galerie  Féministes</a></li>
+          <li class="menu_item"> <img src="public/icon/horbarre.svg" alt="barre horizontale"></li>
           <li class="menu__item"><a class="menu__link" href="glossaire_FR.html">Glossaire</a></li>
+          <li class="menu_item"> <img src="public/icon/horbarre.svg" alt="barre horizontale"></li>
           <li class="menu__item menu__item--btn"><a class="menu__link" href="contact_FR.html">Contact</a></li>
         </ul>
       </nav>
@@ -61,7 +70,9 @@
 
   <!-- Fin de l'en-tête de la page -->
 
-
+  <main>
+    <img class="img-accueil" src="public/img/photohome.webp" alt="photo page d'accueil">
+  </main>
 
 
   <!-- Début du footer -->
