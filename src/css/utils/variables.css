@@ -8,13 +8,9 @@
 --texte-blanc: rgba(255, 255, 255, 1);
 
 /* Polices */
---police--soustitre: 'brandon grotesque';
+--police--soustitre: 'poetsen-one';
 --police--titre: 'poetsen-one';
---texte--article: 'brandon grotesque', light ;
+--texte--article: 'brandon grotesque-light' ;
+--texte--frise: 'brandon grotesque-black' ;
 
 }
-
-@font-face {
-    font-family: 'poetsen-one';
-    src: url('../../fonts/PoetsenOne-Regular.ttf');
- }
