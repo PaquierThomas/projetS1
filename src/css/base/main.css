@@ -1,0 +1,21 @@
+/* permet d'annuler la mise en forme des bouton qu'applique le navigateur. */
+button {
+    -webkit-appearance: none;
+    appearance: none;
+    border: none;
+    background: none;
+    padding: 0;
+    cursor: pointer;
+  }
+  
+  /* Pour enlever l'apparence par défaut des listes */
+  .list-unstyled {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+/* Enlever la mise en forme des liens hypertextes */
+a:link {
+    text-decoration: none;
+}

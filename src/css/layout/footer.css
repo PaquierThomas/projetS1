@@ -1,4 +1,27 @@
+.footer__menu div,
 .footer__excerpt {
     font-family: var(--police--titre) ;
+}
+
+.footer__logo {
+    display: block;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+.footer__excerpt {
+    text-align: center;
     font-size: 19px;
+    margin: 14px 40px;
+}
+
+.footer__title {
+    text-align: center;
+    font-size: 30px;
+}
+
+.footer__menu ul>li {
+    text-align: center;
+    margin: 10px 0px;
+    font-size: 14px;
 }
