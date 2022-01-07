@@ -1,0 +1,24 @@
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    z-index: 5;
+    justify-content: space-between;
+    transition: all .3s ease-in-out;
+
+    height: 65px;
+}
+
+.header__end{
+    display: flex;
+}
+.header__logo{
+    position: relative;
+    width: 86px;
+    height: auto;
+    left: 12px;
+    top: 9px;
+}
+
