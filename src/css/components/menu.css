@@ -10,11 +10,11 @@ On ajoute les propriétés "visibility: hidden" et "opacity: 0" pour masquer le 
     position: fixed;
     top: 0; bottom: 0;
     left: 0; right : 0;
-    background-color: var(--brand-violet);
-    font-size: var(--text-xl);
+    background-color: white;
     letter-spacing: var(--letter-spacing);
-    transition: all .4s ease-in-out;
+    transition: all .4s ease;
   }
+  
   /* On se sert de Javascript pour ajouter une classe sur le menu lorsqu'on clique sur le bouton de menu pour le faire apparaître */
   .menu--open {
     visibility: visible;
@@ -23,19 +23,44 @@ On ajoute les propriétés "visibility: hidden" et "opacity: 0" pour masquer le 
   }
   
   /* Mise en forme des éléments du menu */
-  .menu__list {
-    margin-top: 25vh;
-    margin-left: 15vw;
+
+  .logo-burger {
+    position: fixed;
+    top: 22px;
+    left: 22px;
+  }
+
+  .english-logo {
+    position: fixed;
+    bottom: 12px;
+    right: 18px;
   }
   
+  .menu__list {
+    display: block;
+    margin: 154px auto 0px auto
+  }
   .menu__item {
-    margin-top: 15%;
+    position:relative;
+    text-align: center;
+    font-size: 31px;
+  }
+
+  .menu__barre{
+    display: block;
+    margin: 19px auto 19px auto;
+    width: 143px;
+  }
+  .menu__subh{
+    font-size: 24px;
+    margin-top: 0px;
+    margin-bottom: 0px;
   }
 
 /* Enlever la mise en forme des liens hypertextes du menu burger + couleur */
   .menu__link {
     color: var(--couleur-menu-burger);
-    font-family: var(--police--titre);
+    font-family: var(--texte--frise);
     text-decoration: none;
   }
   
@@ -57,7 +82,7 @@ On ajoute les propriétés "visibility: hidden" et "opacity: 0" pour masquer le 
   .menu-btn__bar::before,
   .menu-btn__bar::after {
     content: '';
-    background: var(--couleur-menu-burger);
+    background: var(--header-article);
     border-radius: 5px;
     height: 7px;
     margin-top: 5px;
@@ -87,7 +112,7 @@ On ajoute les propriétés "visibility: hidden" et "opacity: 0" pour masquer le 
   .menu-btn--open .menu-btn__bar::before,
   .menu-btn--open .menu-btn__bar::after {
     transform: rotate(90deg);
-    top: 0;
+    top: -5px;
   }
   
   .header--atTop .menu-btn:not(.menu-btn--open) .menu-btn__bar,

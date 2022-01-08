@@ -1,5 +1,5 @@
-.header {
-    position: fixed;
+.header-home {
+    position: relative;
     top: 0;
     left: 0;
     width: 100%;
@@ -11,10 +11,10 @@
     height: 65px;
 }
 
-.header__end{
+.header-home__end{
     display: flex;
 }
-.header__logo{
+.header-home__logo{
     position: relative;
     width: 86px;
     height: auto;
