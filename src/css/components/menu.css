@@ -75,8 +75,7 @@ On ajoute les propriétés "visibility: hidden" et "opacity: 0" pour masquer le 
     border: none;
     right: 19px;
     top: 12px;
-    
-  }
+}
   
   .menu-btn__bar,
   .menu-btn__bar::before,

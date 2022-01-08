@@ -13,4 +13,23 @@
 --texte--article: 'brandon grotesque-light' ;
 --texte--frise: 'brandon grotesque-black' ;
 
+/* Tailles de police de caractère */
+--title-xxl: 2.25rem;
+--title-xl: 1.5rem;
+--title-lg: 1.125rem;
+--text-xxl: 3rem;
+--text-xl: 1.375rem;
+--text-md: 0.813rem;
+--text-sm: 0.688rem;
+
+/* Font variantes */
+--letter-spacing: 0.05em;
+
+/* Espaces */
+--space1x: 8px;
+--space2x: 16px;
+--space3x: 24px;
+--space4x: 48px;
+--space5x: 80px;
+
 }

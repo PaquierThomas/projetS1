@@ -22,3 +22,33 @@
     top: 9px;
 }
 
+
+/* Header des autres pages */
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 2;
+    background: #AF64CE;
+    display: flex;
+    padding: 25px 6px 10px 15px;
+    justify-content: space-between;
+    transition: all .3s ease-in-out;
+  }
+  
+  
+  .header__title {
+    position: relative;
+    right: 20px;
+    top: 13px; 
+  }
+  
+  
+  .header__logo {
+    display: block;
+    position: relative;
+    width: 69px;
+    height: auto;
+  }

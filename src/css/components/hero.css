@@ -1,0 +1,44 @@
+/* L'élément qui contient l'image est positionné en absolu pour permettre au titre de venir se superposer à l'image. Toutes les propriétés de position à 0 permettent d'étendre cet élément à tout l'élément parent, positionné en relatif. */
+  .hero__img {
+    position: absolute;
+    top: 0px; left: 0;
+    bottom: 0; right: 0;
+    z-index: 0;
+    opacity: 71%;
+    filter: brightness(120%);
+    margin-bottom: 10px;
+  }
+  
+  .hero__title,
+  .hero__sub-title {
+    font-family: var(--police--titre);
+    position: relative;
+    z-index: 1;
+    text-align: center;
+  }
+
+  .hero__title{
+    font-size: 86px;
+    color: #4A235A;
+    margin-top: 12px;
+    line-height: 94%;
+    margin-bottom: 0px;
+  }
+
+  .hero__sub-title {
+    font-size: 36px;
+    color: white;
+    margin-top: 0px;
+    margin-bottom: 43px;
+  }
+
+  .hero__desc {
+    z-index:1;
+    position: relative;
+    text-align:center;
+    font-size: 22px;
+    font-family: var(--texte--frise);
+    color: white;
+    margin-left: 43px;
+    margin-right: 43px;
+  }
