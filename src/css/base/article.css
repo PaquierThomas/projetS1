@@ -1,0 +1,106 @@
+/* Met les marges sur les côtés des titres + alignement centre*/
+.article__htitre {
+    text-align: center;
+    font-family: var(--police--titre);
+    color: var(--header-article);
+    margin: 0px 20px;
+    font-size: 48px;
+  }
+
+.article__shtitre{
+    font-family: var(--police--soustitre);
+    font-size: 20px;
+}
+/* Met les marges sur les côtés des légendes */
+  .article figcaption{
+    margin: 0px 20px;
+  }
+/* Met les marges sur les côtes des paragraphes dans "article" */
+.article__section p{
+    font-family: var(--texte--article);
+    font-size: 20px;
+    margin: 0px 15px 25px 20px;
+  }
+
+/* Image modification taille */ 
+
+/* Galerie bloc */
+
+.galerie__bloc div{
+  background: var(--couleur--rectangle);
+  margin-left: 25px;
+  margin-right: 25px;
+}
+
+.galerie__bloc img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 60px;
+}
+
+.galerie__titre{
+  text-align: center;
+  font-size: 24px ;
+  font-family: Numans;
+
+}
+
+.hgalerie,
+.hcarrousel{
+  position: relative;
+  text-align: center;
+  font-size: 16px;
+  font-family: FreeSans;  
+  margin: 5px;
+
+}
+.subhgalerie{
+  text-align: center;
+  font-size: 14px;
+  font-family: FreeSans;
+  margin: 5px;
+
+}
+.descgalerie{
+  text-align: center;
+  font-size: 16px;
+  font-family: FreeSans;
+  margin: 5px;
+
+}
+
+.article__intro,
+.article__film,
+.article__technologie{
+  margin: 15px 8px;
+  border: 1px solid #A7A7A7;
+}
+
+.article__impact,
+.article__realite,
+.article__pbpoll,
+.frise__bloc,
+.frise__bloc2{
+  margin: 15px 8px;
+  border: 1px solid #A7A7A7;
+}
+
+.article__solutions,
+.article__pb,
+.article__auteur{
+  margin: 15px 8px;
+  border: 1px solid #A7A7A7;
+}
+
+.hpage2{
+  position: relative;
+  font-family: Numans;
+  font-size: 16px;
+  text-align: center;
+  display: inline-block;
+  width: 375px;
+  top: 65px;
+  color:var(--titrepage);
+  background: var(--rectangle--titrepage);
+}
