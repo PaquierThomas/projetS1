@@ -1,5 +1,5 @@
 .img-accueil{
-    z-index: 1;
+    z-index: 0;
     opacity: 71%;
     filter: brightness(120%);
     position: relative;
