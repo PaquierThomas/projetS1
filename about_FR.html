@@ -1,22 +1,27 @@
+<!-- branche test avant merge sur branche principale-->
 <!DOCTYPE html>
-<html lang="fr">
-    <head>
-        
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="Site ProjetS1 W.E. Fight">
+<html lang="fr" x-data="{ menuIsOpen: false }" :class="menuIsOpen && 'noscroll'">
+  <head>
+      
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Site ProjetS1 W.E. Fight">
 
-        <title>W.E. Fight</title>
-        
-        <!-- Déclaration de la feuille de style -->
-        <link rel="stylesheet" href="src/css/styles.css">
+    <title>W.E. Fight</title>
 
-        <!-- Chargement de la librairie Alpine JS -->
-        <script defer="" src="https://unpkg.com/alpinejs@3.4.2/dist/cdn.min.js"></script>
+    <!-- Déclaration de la feuille de style -->
+    <link rel="stylesheet" href="src/css/styles.css">
+    <!-- Chargement de la librairie Alpine JS -->
+    <script defer="" src="https://unpkg.com/alpinejs@3.4.2/dist/cdn.min.js"></script>
+    <!-- Déclaration de la feuille de javascript-->
+    <script src="src/js/fonction.js"></script>
+    <!-- Chargement de la librairie Amine js-->
+    <script src="https://animejs.com/lib/anime.min.js"></script>
 
-    </head>
 
+
+  </head>
     <body>
 
         <!-- En-tête de la page -->
@@ -24,22 +29,71 @@
             
             <!-- Start du header (logo)-->
             <div class="header__start">
-                <a href="/">
+                <a href="index_FR.html">
                     <img class="header__logo" src="public/icon/logoblancsite.svg" alt="logo du site W.E. Fight">
                 </a>
             </div>
 
             <!-- Dernière partie (partie de droit) du header (nom du site +menu burguer)-->
+            <!-- Logo texte du site -->
             <div class="header__title">
-                <img src="public/icon/W.E. FIGHT.svg" alt="titre du site">
+                <img src="public/icon/logo-texte-site.svg" alt="titre du site">
             </div>
             <!-- Menu burger -->
             <div class="header__end">
-                <button class="header__search">
-                    <img src="public/icon/MenuBurgerBlanc.svg" alt="menu burger / menu de navigation">
-                </button>
+              <button class="header__menu-btn Amenu-btn" aria-label="menu" aria-expanded="false" aria-controls="mainNav"
+                      @pointerdown="menuIsOpen = !menuIsOpen" 
+                      :class="menuIsOpen && 'Amenu-btn--open'">
+                      <span class="Amenu-btn__bar"></span>
+              </button>
+      
+
+
+              <!-- Menu principal -->
+                <!-- Menu burger (lien clicable, nom)-->
+              <nav class="header__menu menu" id="mainNav" :class="menuIsOpen && 'menu--open'">
+                <a href="index_FR.html"><img class="logo-burger" src="public/icon/logoburger-site.svg" alt="logo"></a>
+
+                <ul class="menu__list list-unstyled">
+                  <li class="menu__item">
+                    <a class="menu__link" href="Amarguerite_FR.html">Marguerite Durand 
+                    <p class="menu__subh">Journaliste féministe</p>
+                    </a>
+                  </li>          
+                  <li class="menu__barre"> <img src="public/icon/horbarre.svg" alt="barre horizontale"></li>
+
+                  <li class="menu__item">
+                    <a class="menu__link" href="Asuffragettes_FR.html">Les Suffragettes 
+                    <p class="menu__subh">Le combat qui changea tout</p>  
+
+                    </a>
+                  </li>
+
+                  <li class="menu__barre"> <img src="public/icon/horbarre.svg" alt="barre horizontale"></li>
+
+                  <li class="menu__item">
+                    <a class="menu__link" href="Aoprah_FR.html">Oprah Winfrey 
+                      <p class="menu__subh">Icone mondiale</p> 
+                    </a>
+                  </li>
+                  
+                  <li class="menu__barre"> <img src="public/icon/horbarre.svg" alt="barre horizontale"></li>
+
+                  <li class="menu__item"><a class="menu__link" href="galerie_feministe_FR.html">Galerie  Féministes</a></li>
+
+                  <li class="menu__barre"> <img src="public/icon/horbarre.svg" alt="barre horizontale"></li>
+
+                  <li class="menu__item"><a class="menu__link" href="glossaire_FR.html">Glossaire</a></li>
+
+                  <li class="menu__barre"> <img src="public/icon/horbarre.svg" alt="barre horizontale"></li>
+
+                  <li class="menu__item menu__item--btn"><a class="menu__link" href="contact_FR.html">Contact</a></li>
+                </ul>
+                <a href="#"><img class="english-logo" src="public/icon/English.svg" alt="bouton anglais"></a>
+              </nav>
+      
             </div>
-        </header>
+    </header>
 
         <main>
             <!-- Entete -->
