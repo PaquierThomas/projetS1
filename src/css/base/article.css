@@ -3,17 +3,23 @@
     text-align: center;
     font-family: var(--police--titre);
     color: var(--header-article);
-    margin: 0px 20px;
+    margin-top: 56px;
+    margin-bottom: 27px;
     font-size: 48px;
   }
 
 .article__shtitre{
     font-family: var(--police--soustitre);
     font-size: 20px;
+    margin-left: 10px;
+    margin-bottom: 7px;
 }
 /* Met les marges sur les côtés des légendes */
   .article figcaption{
+    font-family: var(--texte--article);
+    font-size: 14px;
     margin: 0px 20px;
+    text-align: center;
   }
 /* Met les marges sur les côtes des paragraphes dans "article" */
 .article__section p{
@@ -24,83 +30,24 @@
 
 /* Image modification taille */ 
 
-/* Galerie bloc */
-
-.galerie__bloc div{
-  background: var(--couleur--rectangle);
-  margin-left: 25px;
-  margin-right: 25px;
-}
-
-.galerie__bloc img {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 60px;
-}
-
-.galerie__titre{
-  text-align: center;
-  font-size: 24px ;
-  font-family: Numans;
-
-}
-
-.hgalerie,
-.hcarrousel{
+.article img {
+  display:block;
   position: relative;
-  text-align: center;
-  font-size: 16px;
-  font-family: FreeSans;  
-  margin: 5px;
-
-}
-.subhgalerie{
-  text-align: center;
-  font-size: 14px;
-  font-family: FreeSans;
-  margin: 5px;
-
-}
-.descgalerie{
-  text-align: center;
-  font-size: 16px;
-  font-family: FreeSans;
-  margin: 5px;
-
+  right: 24px;
 }
 
-.article__intro,
-.article__film,
-.article__technologie{
-  margin: 15px 8px;
-  border: 1px solid #A7A7A7;
-}
-
-.article__impact,
-.article__realite,
-.article__pbpoll,
-.frise__bloc,
-.frise__bloc2{
-  margin: 15px 8px;
-  border: 1px solid #A7A7A7;
-}
-
-.article__solutions,
-.article__pb,
-.article__auteur{
-  margin: 15px 8px;
-  border: 1px solid #A7A7A7;
-}
-
-.hpage2{
+figure img {
   position: relative;
-  font-family: Numans;
-  font-size: 16px;
+  right:30px;
+}
+
+.article figure>blockquote>q,
+.article figure>q {
+  font-size: 21px;
+  font-family: var(--texte--frise);
+}
+blockquote{
+  margin-right: 0px;
+  margin-left: 0px;
   text-align: center;
-  display: inline-block;
-  width: 375px;
-  top: 65px;
-  color:var(--titrepage);
-  background: var(--rectangle--titrepage);
 }
