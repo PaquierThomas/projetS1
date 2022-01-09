@@ -1,0 +1,38 @@
+.frise{
+    z-index: 0;
+}
+
+
+/* Partie oprah winfrey */
+#otextef1,
+#otextef2,
+#otextef3,
+#otextef4{
+    font-family: var(--texte--frise);
+    font-size: 24px;
+    position: relative;
+    z-index:1
+}
+
+#otextef1{
+    margin-left: 73px;
+    margin-right: 84px;
+}
+
+
+/* Header frise */
+
+.elipse{
+    z-index: 0;
+    position: relative;
+}
+.hfrise {
+    font-family: var(--police--titre);
+    font-size: 48px;
+    color: white;
+    position: relative;
+    z-index: 1;
+    top: 166px;
+    text-align: center;
+    display: block;
+}

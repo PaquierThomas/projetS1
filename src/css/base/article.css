@@ -53,7 +53,7 @@ blockquote{
   text-align: center;
 }
 
-
+/* Marguerite Durand id */
 .article__intro{
   font-family: var(--texte--article);
   margin-top: 10px;
@@ -81,4 +81,29 @@ blockquote{
 #imgM3{
   position: relative;
   left: -5px;
+}
+
+/* Oprah Winfrey id */
+#introO{
+position: relative;
+top: 26px;
+}
+
+#imgO1 {
+  position: relative;
+  left: 52px;
+
+}
+#imgO2 {
+  position: relative;
+  left: 13px;
+}
+#imgO3 {
+  position: relative;
+  right: 60px;
+  width: 145%;
+}
+#imgO4 {
+  position: relative;
+  right: 60px;  
 }

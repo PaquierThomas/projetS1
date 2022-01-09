@@ -1,0 +1,36 @@
+.flecheg img{
+    position: relative;
+    left: 41px;
+    margin-top: 24px;
+
+}
+
+.fleched img {
+    position: relative;
+    left: 41px;
+    margin-top: 24px;
+
+}
+
+
+
+.flecheg p,
+.fleched p{
+    font-family: var(--texte--article);
+}
+
+.flecheg p{
+    position: relative;
+    left: 16px;
+    margin-top: 0px;
+    width: 129px;    
+}
+
+.fleched p{
+    position: relative;
+    left: 16px;
+    margin-top: 0px;
+    width: 129px;
+}
+
+
