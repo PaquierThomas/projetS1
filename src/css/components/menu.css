@@ -114,8 +114,56 @@ On ajoute les propriétés "visibility: hidden" et "opacity: 0" pour masquer le 
     top: -5px;
   }
   
-  .header--atTop .menu-btn:not(.menu-btn--open) .menu-btn__bar,
-  .header--atTop .menu-btn:not(.menu-btn--open) .menu-btn__bar::before,
-  .header--atTop .menu-btn:not(.menu-btn--open) .menu-btn__bar::after {
-    background-color: var(--gray-black);
-  }
+
+/* Bouton menu burger pour les articles */
+
+/* Mise en forme du bouton de menu "Hamburger" */
+.Amenu-btn {
+  position: relative;
+  z-index: 3;
+  width: 53px;
+  appearance: none;
+  background: none;
+  border: none;
+  right: 42px;
+  top: 16px;
+}
+
+.Amenu-btn__bar,
+.Amenu-btn__bar::before,
+.Amenu-btn__bar::after {
+  content: '';
+  background: white;
+  border-radius: 5px;
+  height: 7px;
+  margin-top: 5px;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  z-index: 10;
+  transition: all .4s ease-in-out;
+}
+
+.Amenu-btn__bar::before {
+  top: -25px;
+}
+
+.Amenu-btn__bar::after {
+  top: 15px;
+}
+
+/* Technique pour transformer les 3 barres du bouton de menu en croix
+Ne pas oublier d'ajouter une transition plus haut pour l'animation */
+.Amenu-btn--open .Amenu-btn__bar,
+.Amenu-btn--open .Amenu-btn__bar::before,
+.Amenu-btn--open .Amenu-btn__bar::after {
+  transform: rotate(135deg);
+  background:var(--header-article);
+}
+
+.Amenu-btn--open .Amenu-btn__bar::before,
+.Amenu-btn--open .Amenu-btn__bar::after {
+  transform: rotate(90deg);
+  top: -5px;
+}
+

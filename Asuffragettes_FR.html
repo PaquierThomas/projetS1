@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="fr" x-data="{ menuIsOpen: false }" :class="menuIsOpen && 'noscroll'">
     <head>
         
         <meta charset="utf-8">
@@ -36,10 +36,10 @@
             </div>
             <!-- Menu burger -->
             <div class="header__end">
-              <button class="header__menu-btn menu-btn" aria-label="menu" aria-expanded="false" aria-controls="mainNav"
+              <button class="header__menu-btn Amenu-btn" aria-label="menu" aria-expanded="false" aria-controls="mainNav"
                       @pointerdown="menuIsOpen = !menuIsOpen" 
-                      :class="menuIsOpen && 'menu-btn--open'">
-                      <span class="menu-btn__bar"></span>
+                      :class="menuIsOpen && 'Amenu-btn--open'">
+                      <span class="Amenu-btn__bar"></span>
               </button>
       
 
