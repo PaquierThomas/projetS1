@@ -22,7 +22,8 @@
     text-align: center;
   }
 /* Met les marges sur les côtes des paragraphes dans "article" */
-.article__section p{
+.article__section p,
+.article__intro{
     font-family: var(--texte--article);
     font-size: 20px;
     margin: 0px 15px 25px 20px;
@@ -50,4 +51,34 @@ blockquote{
   margin-right: 0px;
   margin-left: 0px;
   text-align: center;
+}
+
+
+.article__intro{
+  font-family: var(--texte--article);
+  margin-top: 10px;
+}
+
+#quote1{
+  margin:50px 0px;
+  text-align: center;
+  font-size: 21px;
+  font-family: var(--texte--frise);
+}
+
+#introM{
+  top: 31px;
+  position: relative;
+}
+
+#imgM1,
+#imgM2{
+  position: relative;
+  right: 40px;
+}
+
+
+#imgM3{
+  position: relative;
+  left: -5px;
 }

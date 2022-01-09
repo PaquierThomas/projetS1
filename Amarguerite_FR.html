@@ -22,6 +22,7 @@
 
 
   </head>
+
     <body>
 
         <!-- En-tête de la page -->
@@ -53,7 +54,6 @@
                 <!-- Menu burger (lien clicable, nom)-->
               <nav class="header__menu menu" id="mainNav" :class="menuIsOpen && 'menu--open'">
                 <a href="index_FR.html"><img class="logo-burger" src="public/icon/logoburger-site.svg" alt="logo"></a>
-
                 <ul class="menu__list list-unstyled">
                   <li class="menu__item">
                     <a class="menu__link" href="Amarguerite_FR.html">Marguerite Durand 
@@ -93,17 +93,16 @@
               </nav>
       
             </div>
-    </header>    
+    </header>
     
 
         <!-- Contenu principal de la page -->
         <main>
           <div class="hero">
   
-            <div class="hero__header container">
-              <h2 class="hero__title">Marguerite Durand</h2>
-              <h3 class="hero__sub-title">Journaliste féministe </h3>
-              <div class="hero__img duotone"><img src="public/img/journal.webp" alt="Marguerite Durand"></div>
+            <div class="AShero__header container">
+              <h2 class="AShero__title">Marguerite Durand <br>Journaliste féministe</h2>
+              <div class="AShero__img"><img src="public/img/journal.webp" alt="Marguerite Durand"></div>
             </div>
 
           <!-- Section article de marguerite durand (paragraphes titres sous-titres etc)-->
@@ -111,7 +110,7 @@
 
             <!-- Introduction de l'article -->
             <div class="article__intro">
-              <p>
+              <p id="introM">
                 Marguerite Durand est considérée comme une des premières féministes de France. De sa naissance à un parcours personnel et professionnel riche en émotions, à une icône du féminisme en France utilisant la presse comme un moyen de diffuser la pensée Féministe.
               </p>
             </div>
@@ -121,7 +120,7 @@
               <h2 class="article__htitre"> <span> Biographie </span> </h2>
 
               <figure class="article__fimgleg">
-                <img src="public/img/pmarguerite.webp" alt="Portrait de marguerite durand">
+                <img id="imgM1" src="public/img/pmarguerite.webp" alt="Portrait de marguerite durand">
                 <figcaption>Portrait de Marguerite Durand</figcaption>
               </figure>
   
@@ -138,7 +137,7 @@
               <h2 class="article__htitre"> <span> Parcours professionnel </span> </h2>
 
               <figure class="article__fimgleg">
-                <img src="public/img/assemble.webp" alt="Marguerite à un congrès">
+                <img id="imgM2" src="public/img/assemble.webp" alt="Marguerite à un congrès">
                 <figcaption>Marguerite Durand à un congrès pour le droit des femmes</figcaption> 
               </figure>
               
@@ -156,7 +155,7 @@
               <h2 class="article__htitre"> <span> Son combat pour le féminisme </span> </h2>
 
               <figure class="article__fimgleg">
-                <img src="public/img/manifestation.webp" alt="Manifestation droit de vote">
+                <img id="imgM3" src="public/img/manifestation.webp" alt="Manifestation droit de vote">
                 <figcaption> Manifestation pour le droit de vote en France </figcaption> 
               </figure>
 
@@ -174,8 +173,8 @@
               <!-- Citation de Marguerite Durand-->
               <figure class="article__fcitation">
                 <blockquote>
-                  <p>
-                    On ne sait rien de l’admirable activité des femmes, et même les féministes ignorent les trois quarts de ce qu’ont fait’’
+                  <p id= "quote1">
+                    "On ne sait rien de l’admirable activité des femmes, et même les féministes ignorent les trois quarts de ce qu’ont fait’’
                   </p>
                 </blockquote>
               </figure>
@@ -192,7 +191,7 @@
 
             <!-- Conclusion-->
               <!-- Paragraphe de la partie "ce qu"il faut retenir" / conclusion -->
-            <section>
+            <section class="article__section">
 
               <h2 class="article__htitre"> <span> Ce qu'il faut retenir </span> </h2>
               <p> 
