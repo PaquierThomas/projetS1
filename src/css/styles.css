@@ -31,7 +31,7 @@ Soyez attentifs à l'ordre d'import :
 @import "components/menu.css";
 @import "components/hero.css";
 @import "components/button.css";
-@import "components/card.css";
+@import "components/cards.css";
 @import "components/carousel.css";
 @import "components/frise.css";
 @import "components/fleche-article.css";

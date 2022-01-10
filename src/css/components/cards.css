@@ -1,0 +1,118 @@
+
+/* Mise en forme des cards */
+
+.SectionCards,
+.SectionCards img{
+  box-sizing: border-box;
+}
+.SectionCards img{
+  width: 100%;
+  border: 6px solid #4A235A;
+  border-radius: 10px;
+}
+.SectionCards{
+  width: var(--width);
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  border: 14px outset #4A235A;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom:40px;
+}
+.SectionCards h3{
+  font-size: 34px;
+  color: #4A235A;
+  text-align: center;
+  font-family: var(--police--titre);
+}
+.SectionCards p{
+  font-family: var(--texte--article);
+  color: var(--para-text);
+  font-size: 16px;
+}
+.sujet{
+  font-size: 16px;
+}
+.hcards{
+  color: #fff;
+}
+
+.SectionCards a{
+  text-decoration: none;
+  color: #AF64CE;
+  font-family: var(--police--titre);
+  font-weight: 700;
+  left: 177px;
+  position: relative;
+  font-size: 18px;
+}
+
+
+/* Cards autres projets */
+
+
+.aproj {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    background-color: #f7f8fc;
+    font-family: "Roboto", sans-serif;
+    color: #10182f;
+    box-sizing: border-box;
+  }
+  .container {
+    display: flex;
+    width: 1040px;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+  }
+  .aprojCard {
+    margin: 10px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    width: 300px;
+  }
+  .aprojCard-header img {
+    width: 100%;
+    height: 200px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .aprojCard-desc {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 20px;
+    min-height: 250px;
+  }
+  
+  .aprojCard-desc p {
+    font-size: 13px;
+    margin: 0 0 40px;
+  }
+  .aprojCard-desc h4{
+    margin-top: 0px;
+  }
+  .util {
+    display: flex;
+    margin-top: auto;
+  }
+  
+  .util img {
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+  }
+  .info-util h5 {
+    margin: 0;
+    height: 15.3px;
+    top: 10px;
+    position: relative;
+  }
