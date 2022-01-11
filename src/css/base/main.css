@@ -31,3 +31,13 @@ button {
 .def strong {
   font-family: var(--texte--frise);
 }
+
+#htitre{
+  text-align: center;
+  font-family: var(--police--titre);
+  color: var(--header-article);
+  margin-top: 56px;
+  margin-bottom: 27px;
+  font-size: 48px;
+  margin-top: -289px;
+}
