@@ -30,7 +30,7 @@
     top: 0;
     left: 0;
     width: 100%;
-    z-index: 2;
+    z-index: 6;
     background: #AF64CE;
     display: flex;
     padding: 5px 6px 10px 15px;

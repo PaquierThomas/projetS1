@@ -39,5 +39,22 @@ button {
   margin-top: 56px;
   margin-bottom: 27px;
   font-size: 48px;
-  margin-top: -289px;
+  margin-top: 109px;
+}
+#htitre1{
+  text-align: center;
+  font-family: var(--police--titre);
+  color: var(--header-article);
+  margin-top: 56px;
+  margin-bottom: 27px;
+  font-size: 48px;
+  margin-top: 420px
+}
+
+
+#video{
+  left: 30px;
+  position: relative;
+  margin-bottom: 84px;
+
 }
