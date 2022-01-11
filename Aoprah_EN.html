@@ -1,0 +1,397 @@
+<!-- branche test avant merge sur branche principale-->
+<!DOCTYPE html>
+<html lang="fr" x-data="{ menuIsOpen: false }" :class="menuIsOpen && 'noscroll'">
+  <head>
+      
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Site ProjetS1 W.E. Fight">
+
+    <title>W.E. Fight</title>
+
+    <!-- Déclaration de la feuille de style -->
+    <link rel="stylesheet" href="src/css/styles.css">
+    <!-- Chargement de la librairie Alpine JS -->
+    <script defer="" src="https://unpkg.com/alpinejs@3.4.2/dist/cdn.min.js"></script>
+    <!-- Déclaration de la feuille de javascript-->
+    <script src="src/js/fonction.js"></script>
+    <!-- Chargement de la librairie Amine js-->
+    <script src="https://animejs.com/lib/anime.min.js"></script>
+
+
+
+  </head>
+    <body>
+
+        <!-- En-tête de la page -->
+        <header class="header container"> 
+            
+            <!-- Start du header (logo)-->
+            <div class="header__start">
+                <a href="index_FR.html">
+                    <img class="header__logo" src="public/icon/logoblancsite.svg" alt="logo du site W.E. Fight">
+                </a>
+            </div>
+
+            <!-- Dernière partie (partie de droit) du header (nom du site +menu burguer)-->
+            <!-- Logo texte du site -->
+            <div class="header__title">
+                <img src="public/icon/logo-texte-site.svg" alt="titre du site">
+            </div>
+            <!-- Menu burger -->
+            <div class="header__end">
+              <button class="header__menu-btn Amenu-btn" aria-label="menu" aria-expanded="false" aria-controls="mainNav"
+                      @pointerdown="menuIsOpen = !menuIsOpen" 
+                      :class="menuIsOpen && 'Amenu-btn--open'">
+                      <span class="Amenu-btn__bar"></span>
+              </button>
+      
+
+
+              <!-- Menu principal -->
+                <!-- Menu burger (lien clicable, nom)-->
+              <nav class="header__menu menu" id="mainNav" :class="menuIsOpen && 'menu--open'">
+                <a href="index_FR.html"><img class="logo-burger" src="public/icon/logoburger-site.svg" alt="logo"></a>
+
+                <ul class="menu__list list-unstyled">
+                  <li class="menu__item">
+                    <a class="menu__link" href="Amarguerite_FR.html">Marguerite Durand 
+                    <p class="menu__subh">Journaliste féministe</p>
+                    </a>
+                  </li>          
+                  <li class="menu__barre"> <img src="public/icon/horbarre.svg" alt="barre horizontale"></li>
+
+                  <li class="menu__item">
+                    <a class="menu__link" href="Asuffragettes_FR.html">Les Suffragettes 
+                    <p class="menu__subh">Le combat qui changea tout</p>  
+
+                    </a>
+                  </li>
+
+                  <li class="menu__barre"> <img src="public/icon/horbarre.svg" alt="barre horizontale"></li>
+
+                  <li class="menu__item">
+                    <a class="menu__link" href="Aoprah_FR.html">Oprah Winfrey 
+                      <p class="menu__subh">Icone mondiale</p> 
+                    </a>
+                  </li>
+                  
+                  <li class="menu__barre"> <img src="public/icon/horbarre.svg" alt="barre horizontale"></li>
+
+                  <li class="menu__item"><a class="menu__link" href="galerie_feministe_FR.html">Galerie  Féministes</a></li>
+
+                  <li class="menu__barre"> <img src="public/icon/horbarre.svg" alt="barre horizontale"></li>
+
+                  <li class="menu__item"><a class="menu__link" href="glossaire_FR.html">Glossaire</a></li>
+
+                  <li class="menu__barre"> <img src="public/icon/horbarre.svg" alt="barre horizontale"></li>
+
+                  <li class="menu__item menu__item--btn"><a class="menu__link" href="contact_FR.html">Contact</a></li>
+                </ul>
+                <a href="#"><img class="english-logo" src="public/icon/English.svg" alt="bouton anglais"></a>
+              </nav>
+      
+            </div>
+    </header>
+
+    <!-- Contenu principal de la page -->
+    <main>
+        <!-- Entête de l'article -->
+        <div class="hero">
+  
+          <div class="AShero__header container">
+            <h2 class="AShero__title">Oprah Winfrey <br> Icone mondiale </h2>
+            <div class="AShero__img "><img src="public/img/oprah-01.webp" alt="Oprah Winfrey"></div>
+          </div>
+        
+
+        <!-- Article de oprah winfrey (paragraphes titres sous-titres etc)-->
+        <article class="article">
+
+            <!-- Introduction-->
+            <header class="article__intro">
+                <p id="introO"> Oprah Winfrey, d’arrière-arrière-petite fille d’esclave à la femme noire milliardaire la plus influente au monde. Malgré son enfance stricte et difficile, elle se hissera dans les plus hauts échelons des médias pour mener son combat à bien, celui des femmes dans la société. </p>
+            </header>
+
+            <!-- Partie Biographie de Oprah Winfrey -->            
+            <section class="article__section">
+
+                <header class="article__intro">
+                    <h2 class="article__htitre"> <span> Biographie </span> </h2>
+                    <figure class="article__fimgleg">
+                        <img id="imgO1" src="public/img/Oprah-03.webp" alt="Oprah Winfrey jeune">
+                        <figcaption>Photo de oprah winfrey</figcaption>
+                    </figure>
+                </header> 
+
+            <!-- Paragraphe sur l'éducation-->
+                <div>
+                    <h3 class="article__shtitre"> <span> Education </span> </h3>
+                    <p> Abandonnée par sa mère qui la traitait comme un enfant non-désiré, elle fut donc élevée par ses grands-parents, éduquant à la vieille école où le châtiment corporel et mental était de mise pour l’éducation de la petite Oprah. </p>
+                </div>
+
+                <!-- Paragraphe sur les conditions de vie-->
+                <div>
+
+                    <h3 class="article__shtitre"> <span> Conditions de vie </span> </h3>
+                    <p>
+                        Les conditions de vie chez sa mère étaient invivables, la femme vivant avec sa mère ne voulant pas d’un enfant sous son toit, elle fut forcée de dormir sous le porchela nuit au froid et avec peu de couverture. Oprah reviendra plus tard dans sa vie sur ce moment, en citant qu’elle se sentait comme « un fardeau » et qu’elle ne méritait pas de vivre.
+                    </p>
+                
+                </div>
+
+                <!-- Paragraphe sur le salut -->
+                <div>
+                    <h3 class="article__shtitre"> <span> Le salut </span> </h3>
+                    <p>
+                        C’est finalement grâce à son père qu’elle put enfin sortir la tête de l’eau. 
+                        Grâce à sa grand-mère, elle apprit très tôt à lire et lorsque son père la récupéra,
+                        il misa tout sur l’éducation de sa fille, que ce soient des bourses
+                        ou les études supérieures il fit tout ce qui était en son pouvoir
+                        pour lui permettre de rattraper le temps perdu. 
+                        Elle démarra ainsi sa vie d’adulte, blessée mentalement mais en vie.
+                    </p>
+                </div>
+            </section>
+
+            <!-- Partie sur le parcours professionnel de Oprah Winfrey-->
+            <section class="article__section">
+
+                <header class="article__intro">
+                    <h2 class="article__htitre"> <span> Parcours professionnel </span> </h2>
+
+                    <figure class="article__shtitre">
+                        <img id="imgO2" src="public/img/Oprah-02.webp" alt="Oprah Winfrey interviewant Lindsay Lohan">
+                        <figcaption>Oprah Winfrey interview Lindsay Lohan</figcaption>
+                    </figure>
+                </header> 
+
+                <!-- Paragraphe sur le début de carrière de Oprah Winfrey-->
+                <div>
+                    <h3 class="article__shtitre"> <span> Début de carrière </span> </h3>
+                    <p>
+                        Oprah Winfrey commença sa carrière dans des petites radios locales
+                        puis régionales de 1970 à 1975 jusqu’à être la première femme noire
+                        présentatrice d’une émission télévisée à Nashville.
+                        Elle se fera néanmoins renvoyer par le producteur raciste,
+                        lui disant qu’elle ne mérite pas sa place ici, en tant que femme noire.
+                         C’est ainsi qu’elle se rendra à Chicago pour présenter un programme matinal nommé WLS-TV.
+                    </p>
+                </div>
+    
+                <!-- Paragraphe sur l'asciension d'Oprah Winfrey-->
+                <div>
+                    <h3 class="article__shtitre"> <span> Ascension </span> </h3>
+                    <p>
+                        Son influence sur la petite émission sera telle qu’elle détrônera,
+                         en terme d’audience, le talkshow le plus regardé de Chicago nommé « Toutefois ».
+                          La date qui changera sa vie à tout jamais fut le 8 septembre 1986, lors de la 
+                          première émission de « The Oprah Winfrey’s Show » qui fut diffusé pendant plus
+                           de 25 ans , comportant plus de 4500 épisodes et ayant accueilli plus de 28000 
+                           invités des moins connus jusqu’à Lance Armstrong et Michael Jackson.
+                    </p>
+                </div>
+    
+                <!--  Paragraphe de fin pour la partie "parcours professionnels" -->
+                <div>
+                    <p>
+                        Oprah s’essayera au cinéma, retournera à la radio puis finalement c’est en 2011
+                         qu’elle arrêtera de présenter son émission phare « The Oprah Winfrey show »,
+                          pour se lancer dans sa propre chaîne OWN (Oprah Winfrey Network).
+                    </p>
+                </div>
+
+            </section>
+
+            <!-- Partie sur l'implication dans le féminisme d'Oprah Winfrey-->
+            <section class="article__section">
+
+                <!-- Implication dans le féminisme intro-->
+                <header class="article__intro">
+                    <h2 class="article__htitre"> <span> Implication dans le féminisme </span> </h3>
+                    <figure>
+                        <img id="imgO3" src="public/img/Oprah-06.webp" alt="Oprah Winfrey prononcant un discours">
+                        <figcaption>Oprah Winfrey prononcant un discours</figcaption>
+                    </figure>
+                </header>
+
+                <!-- Paragraphe sur la résolution-->
+                <div>
+                    <h3 class="article__shtitre"> <span> Résolution </span> </h3>
+                    <p>
+                        Oprah ayant eu une enfance très compliquée et un accès à l’éducation inexistant
+                         lors de sa jeunesse, elle prit la décision d’en faire son combat avec pour but
+                          d’aider les jeunes de filles de 8 à 12 ans à pouvoir aller à l’école à Johannes Burg. 
+                    </p>
+
+                    <p>
+                        Elle fut aussi une des premières femmes à se dresser contre les normes de beauté
+                         à propos du corps (corpulence, poids, formes), érigées par la société pendant
+                        ces dizaines, centaines d’années.  Oprah a aussi apporté son soutien et 
+                        son témoignage à la création d’une loi visant à créer un dossier
+                         national répertoriant tous les pédophiles, dans le but de protéger
+                          d’éventuelles futures victimes, potentielles vies gâchées.
+                </div>
+    
+                <!-- Paragraphe sur l'humanitaire-->
+                <div >
+                    <h3 class="article__shtitre"> <span> Humanitaire </span> </h3>
+                    <p>
+                        Elle a aussi supporté de nombreuses autres causes comme des partis pour
+                         sauver les femmes victimes des guerres en Iraq. C’est ainsi que son combat
+                          se centre principalement autour de la condition de vie des femmes.
+                    </p>
+                </div>
+
+            </section>
+            <!-- Partie sur les récompenses d'Oprah Winfrey-->
+            <section class="article__section">
+
+                <!-- Récompenses-->
+                    <header class="article__intro">
+                        <h2 class="article__htitre"> <span> Récompenses </span> </h2>
+                        <figure>
+                            <img id="imgO4" src="public/img/Oprah-04.webp" alt="Oprah Winfrey aux golden globes">
+                            <figcaption>Oprah Winfrey aux golden globes</figcaption>
+                        </figure>
+                        <p>
+                            Elle obtiendra beaucoup de récompenses lors de sa vie. Quand elle était adolescente,
+                             elle fut la première femme noire à avoir remporté le concours de « Miss Fire Prevention »
+                              à Nashville. En 2011 elle obtient le « Career Achievement Award » qui la récompense de
+                               sa carrière fulgurante et inspirante.
+                        </p>
+                    </header>
+
+                <!-- Paragraphe sur la consécration-->
+                <div>
+                    <h3 class="article__shtitre"> <span> Consécration </span> </h3>
+
+                    <p>
+                        En 2013 elle reçoit des mains du président Barack Obama la médaille de la liberté,
+                         et finalement, en 2018, elle obtient le « Cecil B. DeMille Award » qui récompense
+                          les célébrités pour leur carrière tout le long de leurs vies et leur implication 
+                          dans l’humanitaire et le social.
+                    </p>
+    
+                    <p>
+                        Au total, elle recevra 17 Emmy Awards pour ses émissions de télévision ce qui la hisse
+                         au rang d’icône et héroïne nationale en terme d’influence.
+                    </p>
+
+                </div>
+            </section>                
+
+            <!-- Conclusion-->
+                <!-- Paragraphe de la partie "ce qu"il faut retenir" / conclusion -->
+                <section class="article__section">
+                    <h2 class="article__htitre"> Ce qu'il faut retenir </h2>
+
+                    <p> Nous pouvons donc dire que Oprah Winfrey a su surmonter en partie les traumatismes 
+                        de son passé pour se hisser comme la femme africaine-américaine la plus influente
+                         dans les médias et dans le monde entier, tout en gardant les pieds sur terre en
+                         continuant à aider les personnes dans le besoin. Oprah Winfrey n’est alors pas
+                         qu’un cadeau pour la cause féministe mais un cadeau pour le monde entier.
+                    </p>
+
+                </section>
+
+        </article>
+
+        <!-- Flèches article suivant-->
+
+        <div class="flecheg">
+            <a href="Amarguerite_FR.html">
+                <img src="public/icon/fleche-gauche.svg" alt="fleche gauche">
+            </a>
+            <p>Lire l’article sur <br> Marguerite Durand</p>
+        </div>
+
+        <div class="fleched">
+            <a href="Asuffragettes_FR.html">
+            <img src="public/icon/fleche-droite.svg" alt="fleche droite">
+            </a>
+            <p>Lire l’article sur <br> les suffragettes</p>
+        </div>
+
+
+
+        <!-- Frise chronologique -->
+        <section>
+
+          <header>
+            <h2> <span class="hfrise">Frise chronologique</span> </h2>
+            <img class="elipse" src="public/icon/Ellipse-frise.svg" alt="header-Ellipse-frise">
+          </header>
+
+          <!-- Frise -->
+          <img class="frise" src="public/icon/frise-oprah.svg" alt=" frise oprah">
+
+    
+  
+    </main>
+      <!-- Fin du contenu principal -->
+
+
+      <footer class="footer">
+
+        <!-- En-tête du footer -->
+        <div>
+         <img class="footer__logo" src="public/icon/logoblancsite.svg" alt="Logo du site W.E. Fight">
+         <p class="footer__excerpt">W.E. Fight, l’histoire du féminisme crée et racontée par les femmes</p>
+        </div>
+        <!-- Fin de l'en-tête du footer -->
+    
+        <!-- Début desription/catégories/éléments du footer -->
+        <nav class="footer__menu">
+    
+          <!-- Catégorie 1, tout les articles -->
+          <div class="footer__categorie1">
+            <h3 class="footer__title">Article</h3>
+            <ul class="list-unstyled">
+              <li><a href="Amarguerite_FR.html">Marguerite Durand <br> Journaliste féministe</a></li>
+              <li><a href="Asuffragettes_FR.html">Les Suffragettes <br> Le combat qui changea tout</a></li>
+              <li><a href="Aoprah_FR.html">Oprah Winfrey <br> Icone mondiale</a></li>
+            </ul>
+          </div>
+    
+          <!-- Catégorie 2, tout les éléments du site (galerie, glossaire, autres projets) -->
+          <div class="footer__categorie2">
+            <h3 class="footer__title">Eléments du site</h3>
+            <ul class="list-unstyled">
+              <li><a href="galerie_feministe_FR.html">Galerie féministes</a></li>
+              <li><a href="glossaire_FR.html">Glossaire</a></li>
+              <li><a href="autres_projets_FR.html">Autres projets</a></li>
+            </ul>
+          </div>
+          
+          <!-- Catégorie 3, toutes les informations (a propos, contact) -->
+          <div class="footer__categorie3">
+            <h3 class="footer__title">Informations</h3>
+            <ul class="list-unstyled">
+              <li><a href="about_FR.html">A propos</a></li>
+              <li><a href="contact_FR.html">Contact</a></li>
+            </ul>
+        </nav>
+    
+        <!-- Catégorie nous suivre avec chaque réseau social (facebook, twitter, instagram, discord)-->
+        <div class="footer__social">
+          <h3 class="footer__title">Nous suivre</h3>
+          <ul class="footer__list list-unstyled">
+            <li><a href="https://facebook.com" aria-label="facebook"><img src="public/icon/facebook.svg" alt="icone facebook"></a></li>
+            <li><a href="https://twitter.com" aria-label="twitter"><img src="public/icon/twitter.svg" alt="icone twitter"></a></li>
+            <li><a href="https://instagram.com" aria-label="instagram"><img src="public/icon/instagram.svg" alt="icone instagram"></a></li>
+            <li><a href="https://discord.com" aria-label="discord"><img src="public/icon/discord.svg" alt="icone discord"></a></li>
+          </ul>
+        </div>
+    
+        <!-- Description de fin du footer -->
+        <img class="footer__gb" src="public/icon/MMI_dut_small_white 3.svg" alt="logo du département mmi">
+        <p class="footer__endDesc">Projet S1 <br> MMI Montbéliard</p>
+        
+      </footer>
+    
+      <!-- Fin du footer-->
+
+    </body>
+</html>
