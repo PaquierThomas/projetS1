@@ -21,3 +21,13 @@ button {
   text-decoration: none;
   color: var(--couleur-menu-burger);
 }
+
+
+.def {
+  margin: 20px 20px;
+  font-family: var(--texte--article);
+}
+
+.def strong {
+  font-family: var(--texte--frise);
+}
