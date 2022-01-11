@@ -1,9 +1,6 @@
 :root {
     --swiper-theme-color: black;
   }
-  * {
-    box-sizing: border-box;
-  }
   .mainG {
     height: 100vh;
     width: 100vw;
