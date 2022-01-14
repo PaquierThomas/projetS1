@@ -1,0 +1,5 @@
+/* Pour rendre les images responsives */
+img {
+    max-width: 100%;
+    height: auto;
+  }
