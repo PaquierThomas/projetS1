@@ -50,6 +50,7 @@
   top: 79px; left: 0;
   bottom: 0; right: 0;
   z-index: 0;
+  width:120px;
   opacity: 71%;
   filter: brightness(120%);
   margin-bottom: 10px;
