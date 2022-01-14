@@ -16,7 +16,6 @@
 .footer {
     background: var(--header-article);
     z-index: 0;
-    width: 374px;
 }
 .footer__logo {
     display: block;
