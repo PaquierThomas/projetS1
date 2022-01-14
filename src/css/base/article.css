@@ -71,18 +71,6 @@ blockquote{
   position: relative;
 }
 
-#imgM1,
-#imgM2{
-  position: relative;
-  right: 40px;
-}
-
-
-#imgM3{
-  position: relative;
-  left: -5px;
-}
-
 /* Oprah Winfrey id */
 #introO{
 position: relative;
@@ -99,8 +87,6 @@ top: 26px;
   left: 13px;
 }
 #imgO3 {
-  position: relative;
-  right: 60px;
   width: 145%;
 }
 #imgO4 {
